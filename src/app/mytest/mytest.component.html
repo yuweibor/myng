@@ -1,0 +1,10 @@
+<div #myBox >{{test}}</div>
+<div *ngFor="let item of arr;let key=index;">
+    {{item.a}}
+</div>
+<div *ngIf="isTrue">
+    2222
+</div>
+<input type="text" [(ngModel)]="keywords"/>
+{{keywords}}
+<app-child #child [title]="title" [parent]="this" (outer)="onReceiveMsg($event)"></app-child>
